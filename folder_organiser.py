@@ -1,7 +1,7 @@
 import os
 import re
 import shutil, stat, sys
-if (len(sys.argv)==1):
+if (len(sys.argv)<2):
     source = 'C:\\Users\\Ashank\\Downloads'                 #Directory to be organised
 else:
     source = sys.argv[1]
