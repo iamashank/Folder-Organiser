@@ -18,7 +18,7 @@ names = ['Programs','Codes','Compressed','Documents','Photos','Video','Music','O
 
 for name in names:
     s = source+'\\'+name
-    os.makedirs(s,exist_ok=True)
+    os.makedirs(s,exist_ok=True)        #Python 3 only
 
 def copy(f,folder):
     s = source+'\\'+f
