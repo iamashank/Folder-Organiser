@@ -1,3 +1,4 @@
+# Random header
 import os
 import re
 import shutil, stat, sys
@@ -16,6 +17,12 @@ audio = ['mp3','wma','flac','aac','mmf','amr','m4a','m4r','ogg','mp2','wav','wav
 #Names of the folders to be created
 names = ['Programs','Codes','Compressed','Documents','Photos','Video','Music','Others']
 
+
+# New lines are fun
+# let's add some more here
+# maybe one more
+# last one for sure
+
 for name in names:
     s = source+'\\'+name
     os.makedirs(s,exist_ok=True)        #Python 3 only
@@ -24,10 +31,10 @@ def copy(f,folder):
     s = source+'\\'+f
     d = source+'\\'+folder+'\\'+f
     shutil.copyfile(s,d)
-    os.chmod(s, stat.S_IWRITE)
+    os.chmod(s, stat.S_IWRITE) # Adding some random comment here
     os.remove(s)
 
-files = [ f for f in os.listdir(source) if os.path.isfile(os.path.join(source,f)) ]
+files = [ fa for fa in os.listdir(source) if os.path.isfile(os.path.join(source,fa)) ] #some change here
 for f in files:
     q = re.split('[.]', f)
     a = str(q[len(q)-1])
