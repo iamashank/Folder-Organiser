@@ -1,3 +1,4 @@
+# Random header
 import os
 import re
 import shutil, stat, sys
@@ -15,6 +16,12 @@ audio = ['mp3','wma','flac','aac','mmf','amr','m4a','m4r','ogg','mp2','wav','wav
 
 #Names of the folders to be created
 names = ['Programs','Codes','Compressed','Documents','Photos','Video','Music','Others']
+
+
+# New lines are fun
+# let's add some more here
+# maybe one more
+# last one for sure
 
 for name in names:
     s = source+'\\'+name
