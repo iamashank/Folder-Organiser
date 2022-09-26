@@ -34,7 +34,7 @@ def copy(f,folder):
     os.chmod(s, stat.S_IWRITE) # Adding some random comment here
     os.remove(s)
 
-files = [ f for f in os.listdir(source) if os.path.isfile(os.path.join(source,f)) ]
+files = [ fa for fa in os.listdir(source) if os.path.isfile(os.path.join(source,fa)) ] #some change here
 for f in files:
     q = re.split('[.]', f)
     a = str(q[len(q)-1])
