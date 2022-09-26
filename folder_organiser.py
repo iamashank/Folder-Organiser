@@ -24,7 +24,7 @@ def copy(f,folder):
     s = source+'\\'+f
     d = source+'\\'+folder+'\\'+f
     shutil.copyfile(s,d)
-    os.chmod(s, stat.S_IWRITE)
+    os.chmod(s, stat.S_IWRITE) # Adding some random comment here
     os.remove(s)
 
 files = [ f for f in os.listdir(source) if os.path.isfile(os.path.join(source,f)) ]
